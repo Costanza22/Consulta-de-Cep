@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de CEP</h1>
+        <div class="form-container">
+            <input type="text" id="cep" placeholder="Digite o CEP">
+            <button id="consultar">Consultar</button>
+            <button id="armazenar">Armazenar</button>
+        </div>
+
+        <h2>Registros Armazenados</h2>
+        <div class="table-container">
+            <table id="registros">
+                <thead>
+                    <tr>
+                        <th id="cep-header">CEP</th>
+                        <th id="cidade-header">Cidade</th>
+                        <th id="bairro-header">Bairro</th>
+                        <th id="estado-header">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="ordenacao">
+            <label for="ordenarPor">Ordenar por:</label>
+            <select id="ordenarPor">
+                <option value="cep">CEP</option>
+                <option value="cidade">Cidade</option>
+                <option value="bairro">Bairro</option>
+                <option value="estado">Estado</option>
+            </select>
+            <label for="ordem">Ordem:</label>
+            <select id="ordem">
+                <option value="crescente">Crescente</option>
+                <option value="decrescente">Decrescente</option>
+            </select>
+            <button id="ordenar">Ordenar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
